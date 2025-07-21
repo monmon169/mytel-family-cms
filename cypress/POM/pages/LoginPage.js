@@ -2,7 +2,7 @@ class LoginPage {
     elements ={
         userName : () => cy.get('#username'),
         password :() => cy.get('#password'),
-        signInBtn : () => cy.get('#login-btn'),
+       
     }
 
 
@@ -16,9 +16,7 @@ class LoginPage {
         this.elements.password().type(password);
     }
 
-    clickSignInBtn() {
-        this.elements.signInBtn().click();
-    }
+    
 }
 
 export default LoginPage;
